@@ -1,0 +1,49 @@
+/*
+Theme Name: Sommerce
+Theme URI: http://demo.yithemes.com/sommerce/
+Description: The perfect e-commerce solution
+Version: 2.9.1
+Author: Your Inspiration Themes
+Author URI: http://yithemes.com/
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, red, white, light, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, custom-colors, custom-header, custom-background, custom-menu, editor-style, theme-options, threaded-comments, sticky-post, translation-ready
+*/
+
+
+/***********************************************************************
+******************* reset.css ******************************************
+************************************************************************/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate; border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+th {color:#757475;line-height:40px;min-height:40px;text-align:center;padding:10px;font-weight:bold;}
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote, q { quotes:"" ""; }
+a img {border:none;}
+.clearer {height:0px;overflow:hidden;margin:0px;clear:both;}
+.center {text-align:center;}                                       
+
+/* seld-clear floats */
+.group:after { content:"."; display:block; height:0; clear:both; visibility:hidden; font-size:0; line-height:0; } 
+/* ie.css */
+* html .group { /* IE6 */
+    height:1%;
+}
+*:first-child+html .group { /* IE7 */
+    min-height:1%;
+}                             
+h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;}
+html{-webkit-font-smoothing:antialiased;}
+/***********************************************************************/     
+
+
+html, body, div, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+  
+img { border:0 }
