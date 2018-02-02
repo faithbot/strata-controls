@@ -1,17 +1,11 @@
 <?php
 
 /**
-
  * The Header for our theme.
-
  *
-
  * @package WordPress
-
  * @subpackage YIW Themes
-
  * @since 1.0
-
  */               
 
  global $yiw_mobile;
@@ -21,41 +15,29 @@
 <!--[if IE 6]>
 
 <html id="ie6" <?php language_attributes(); ?>>
-
 <![endif]-->
 
 <!--[if IE 7]>
-
 <html id="ie7" <?php language_attributes(); ?>>
-
 <![endif]-->
 
 <!--[if IE 8]>
-
 <html id="ie8" <?php language_attributes(); ?>>
-
 <![endif]-->
 
 <!--[if IE 9]>
-
 <html id="ie9" <?php language_attributes(); ?>>
-
 <![endif]-->
 
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 
 <html <?php language_attributes(); ?>>
-
 <!--<![endif]-->
-
 <head>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
 <?php if ( ! $yiw_mobile->isIpad() ) : ?>
-
 <meta name="viewport" content="width=device-width" />
-
 <?php endif ?>
 
 
@@ -70,9 +52,6 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />                              
-
-	
-
 	<?php if ( yiw_get_option( 'responsive', 1 ) ) : ?>
 
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="<?php echo get_template_directory_uri(); ?>/css/lessthen980.css" />
@@ -88,70 +67,44 @@
     <?php        
 
 		// styles
-
         wp_enqueue_style( 'prettyPhoto' );  
-
 		wp_enqueue_style( 'Droid-google-font',  yiw_ssl_url( 'http://fonts.googleapis.com/css?family=Droid+Sans' ) );      
-
-        wp_enqueue_style( 'jquery-tipsy' );  
-
-                                             
-
+        wp_enqueue_style( 'jquery-tipsy' );                                 
 		// scripts    
-
         wp_enqueue_script( 'jquery-prettyPhoto' );
-
         wp_enqueue_script( 'jquery-tipsy' );  
-
         wp_enqueue_script( 'jquery-tweetable' );           
-
     	wp_enqueue_script( 'jquery-nivo' );       
-
 	    wp_enqueue_script( 'jquery-cycle' );   
-
         wp_enqueue_script( 'jquery-easing' ); 
-
-        
 
         // slider libraries
 
 		if ( is_home() || is_front_page() || is_page_template('home.php') || get_page_template_slug( get_option('woocommerce_shop_page_id') ) == 'home.php' ) :
 
-		
 
             $slider_type = yiw_slider_type();
-
-            
 
             if ( in_array( $slider_type, array( 'cycle', 'nivo' ) ) )
 
 		        wp_enqueue_style( 'slider-' . $slider_type,        get_template_directory_uri()."/css/slider-". $slider_type .".css" );
 
-			
-
 			// elegant
 
 			if ( $slider_type == 'elegant' ) :      
-
 	    		wp_enqueue_script( 'jquery-cycle' );  
-
-	    
 
 		    // flash
 
 		    elseif ( $slider_type == 'flash' ) :
 
 		        wp_enqueue_script( 'swfobject' );
-
-	    
-
+	
 		    // thumbnails
 
 		    elseif ( $slider_type == 'thumbnails' ) :
 
 		        wp_enqueue_script( 'jquery-aw-showcases', get_template_directory_uri()."/js/jquery.aw-showcase.js" );
-
-	    
 
 		    // cycle
 
@@ -161,15 +114,11 @@
 
 		        wp_enqueue_script( 'swfobject' );
 
-	    
-
 		    // nivo
 
 		    elseif ( $slider_type == 'nivo' ) :
 
 		        wp_enqueue_script( 'jquery-nivo' );
-
-	    
 
 		    // rotating
 
@@ -183,15 +132,10 @@
 
 		    endif;
 
-		
 
 		endif;
 
-
-
         wp_enqueue_script( 'jquery-mobilemenu', YIW_THEME_JS_URL . 'jquery.mobilemenu.js', array('jquery'), '1.0', true);
-
-
 
         // add select menu on mobile
 
