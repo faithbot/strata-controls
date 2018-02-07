@@ -785,6 +785,11 @@ code, pre {background-color:#e8ebec;border:1px dotted #bbb;color:#333;font:13px/
 .box-sections span, .box-sections-border span { /*color:#244455*/ }
 
 /*column*/
+.one-half {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
 /*.one-fourth {float:left;width:225px;margin-right:19px;}
 .one-third  {float:left;width:305px;margin-right:19px;}
 .two-third  {float:left;width:635px;margin-right:19px;}
@@ -1077,3 +1082,6 @@ input[type=number]::-webkit-inner-spin-button {
 .single-product.woocommerce div.product .summary > .yith-wcwl-add-to-wishlist{
     display: none;
 }
+
+
+
