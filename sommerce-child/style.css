@@ -789,6 +789,7 @@ code, pre {background-color:#e8ebec;border:1px dotted #bbb;color:#333;font:13px/
 	width: 50%;
 	float: left;
 	box-sizing: border-box;
+	padding: 5px;
 }
 /*.one-fourth {float:left;width:225px;margin-right:19px;}
 .one-third  {float:left;width:305px;margin-right:19px;}
